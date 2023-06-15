@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #121417;
+  flex-direction: column;
+}
+
+.hidden {
+  display: none;
+}
+
+.card {
+  background-color: #19202a;
+  width: 400px;
+  border-radius: 30px;
+  background: radial-gradient(circle farthest-side at top center, #242e3d 0%, #19202a 56%);
+}
+.card-container {
+  padding: 30px;
+}
+.card-rating {
+  color: #7c8798;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.card-rating span {
+  background-color: #28313b;
+  padding: 15px;
+  border-radius: 50%;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  cursor: pointer;
+}
+.card-rating span:hover {
+  background-color: #fb7413;
+  color: #ffffff;
+}
+.card-ratings_icon {
+  background-color: #28313b;
+  padding: 15px;
+  width: fit-content;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 35px;
+}
+.card-ratings_icon img {
+  height: 15px;
+}
+.card-ratings_title {
+  color: #ffffff;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+.card-ratings_text {
+  font-size: 15px;
+  color: #7c8798;
+  margin-bottom: 25px;
+  line-height: 25px;
+}
+.card-ratings_btn {
+  background-color: #fb7413;
+  text-transform: uppercase;
+  color: #ffffff;
+  width: 100%;
+  border: none;
+  padding: 13px;
+  letter-spacing: 2px;
+  font-size: 15px;
+  border-radius: 40px;
+  cursor: pointer;
+}
+.card-ratings_btn:hover {
+  background-color: #ffffff;
+  color: #fb7413;
+}
+.card-submit {
+  text-align: center;
+  margin-top: 15px;
+}
+.card-submit_pill {
+  color: #fb7413;
+  background-color: #28313b;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 5px 15px;
+  border-radius: 30px;
+  font-size: 14px;
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+.card-submit_title {
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+.card-submit_text {
+  color: #959eac;
+  font-size: 14.8px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.attribution {
+  margin-top: 30px;
+  font-size: 13px;
+  text-align: center;
+  color: #ffffff;
+}
+.attribution a {
+  color: #3e52a3;
+}
+
+/*# sourceMappingURL=style.css.map */

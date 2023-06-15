@@ -16,19 +16,9 @@
       href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./sass/style.css">
 
     <title>Frontend Mentor | Interactive rating component</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
     <main>
@@ -52,21 +42,21 @@
               <span>4</span>
               <span>5</span>
             </div>
-            <button class="card-btn">Submit</button>
+            <button class="card-ratings_btn">Submit</button>
           </section>
           <!-- end ratings section -->
           <!-- Submit section -->
-          <section class="card-submit">
+          <section class="card-submit hidden">
             <div class="card-submit_image">
               <img
                 src="./images/illustration-thank-you.svg"
                 alt="Thank you illustration"
               />
             </div>
-            <div class="card-submit_chip">
-              You selected <span id="rating"></span> out of 5
+            <div class="card-submit_pill">
+              You selected <span id="rating">0</span> out of 5
             </div>
-            <h2 class="card-submit_title">Thank You!</h2>
+            <h2 class="card-submit_title">Thank you!</h2>
             <p class="card-submit_text">
               We appreciate you taking the time to give a rating. If you ever
               need more support, don’t hesitate to get in touch!

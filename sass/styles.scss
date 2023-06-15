@@ -1,0 +1,149 @@
+@use "./variables" as v;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: v.$very-dark-blue;
+  flex-direction: column;
+}
+
+.hidden {
+  display: none;
+}
+
+.card {
+  background-color: v.$dark-blue;
+  width: 400px;
+  border-radius: 30px;
+  background: radial-gradient(
+    circle farthest-side at top center,
+    #242e3d 0%,
+    #19202a 56%
+  );
+
+  &-container {
+    padding: 30px;
+  }
+
+  &-rating {
+    color: v.$medium-grey;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+    & span {
+      background-color: v.$background;
+      padding: 15px;
+      border-radius: 50%;
+      width: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      cursor: pointer;
+
+      &:hover {
+        background-color: v.$orange;
+        color: v.$white;
+      }
+    }
+  }
+  &-ratings {
+    &_icon {
+      background-color: v.$background;
+      padding: 15px;
+      width: fit-content;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 35px;
+
+      & img {
+        height: 15px;
+      }
+    }
+
+    &_title {
+      color: v.$white;
+      font-weight: 700;
+      margin-bottom: 10px;
+      font-size: 30px;
+    }
+
+    &_text {
+      font-size: 15px;
+      color: v.$medium-grey;
+      margin-bottom: 25px;
+      line-height: 25px;
+    }
+
+    &_btn {
+      background-color: v.$orange;
+      text-transform: uppercase;
+      color: v.$white;
+      width: 100%;
+      border: none;
+      padding: 13px;
+      letter-spacing: 2px;
+      font-size: 15px;
+      border-radius: 40px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: v.$white;
+        color: v.$orange;
+      }
+    }
+  }
+
+  &-submit {
+    text-align: center;
+    margin-top: 15px;
+
+    &_pill {
+      color: v.$orange;
+      background-color: v.$background;
+      width: fit-content;
+      margin: 0 auto;
+      padding: 5px 15px;
+      border-radius: 30px;
+      font-size: 14px;
+      margin-top: 25px;
+      margin-bottom: 30px;
+    }
+
+    &_title {
+      color: v.$white;
+      margin-bottom: 15px;
+    }
+
+    &_text {
+      color: v.$light-grey;
+      font-size: 14.8px;
+      line-height: 1.5;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.attribution {
+  margin-top: 30px;
+  font-size: 13px;
+  text-align: center;
+  color: v.$white;
+
+  & a {
+    color: v.$link-color;
+  }
+}
