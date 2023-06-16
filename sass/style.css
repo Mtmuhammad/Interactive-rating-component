@@ -126,4 +126,15 @@ body {
   color: #3e52a3;
 }
 
+.checked {
+  background-color: #959eac !important;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 450px) {
+  .card {
+    width: 360px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -147,3 +147,14 @@ body {
     color: v.$link-color;
   }
 }
+
+.checked {
+   background-color: v.$light-grey !important;
+   color: v.$white;
+}
+
+@media screen and (max-width: 450px) {
+   .card {
+      width: 360px;
+   }
+}
